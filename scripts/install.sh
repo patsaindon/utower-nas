@@ -1,9 +1,9 @@
 echo -e "\n\033[0;32m >> Install Requirements\033[0m"
-sudo apt-get -y update 2>&1 >/dev/null
-sudo apt-get -y upgrade 2>&1 >/dev/null
-sudo apt -y install software-properties-common 2>&1 >/dev/null
-sudo /usr/bin/apt-get -y install python-pip3 2>&1 >/dev/null
-sudo /usr/bin/pip3 install --user ansible 2>&1 >/dev/null
+echo "deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list  
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo /usr/bin/apt-get -y install python-pip3
+sudo /usr/bin/pip3 install --user ansible
 
 #if [ ! -d "$HOME/ansible-uTower-roles" ]; then
 #	echo -e  "\n\033[0;32m >> Clone  ansible-uTower-roles repository\033[0m"
