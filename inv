@@ -1,0 +1,2 @@
+[local]
+localhost ansible_connection=local ansible_ssh_private_key_file=/home/utower-admin/.ssh/id_rsa.pub ansible_sudo_pass=uT0w3r33//
