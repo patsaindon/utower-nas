@@ -2,7 +2,7 @@ echo -e "\n\033[0;32m >> Install Requirements\033[0m"
 sudo apt -y install software-properties-common
 sudo apt-add-repository -y ppa:ansible/ansible
 sudo apt-get -y update 2>&1 >/dev/null
-sudo /usr/bin/apt-get -y install python-pip ansible
+sudo /usr/bin/apt-get -y install python-pip3 ansible
 sudo /usr/bin/pip install --upgrade pip
 
 #if [ ! -d "$HOME/ansible-uTower-roles" ]; then
