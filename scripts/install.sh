@@ -1,8 +1,8 @@
 echo -e "\n\033[0;32m >> Install Requirements\033[0m"
-echo "deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list  
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo /usr/bin/apt-get -y install python-pip3
+sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3 get-pip.py --user
 sudo /usr/bin/pip3 install --user ansible
 
 #if [ ! -d "$HOME/ansible-uTower-roles" ]; then
