@@ -3,7 +3,7 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python3 get-pip.py --user
-sudo /usr/bin/pip3 install --user ansible
+sudo python3 -m pip install --user ansible
 
 #if [ ! -d "$HOME/ansible-uTower-roles" ]; then
 #	echo -e  "\n\033[0;32m >> Clone  ansible-uTower-roles repository\033[0m"
